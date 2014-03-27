@@ -16,8 +16,7 @@ exports.getCustomer = function(req, res) {
 	var cust_id = req.params.id;
 	var customer = customers[cust_id];
 	if (customer == null) {
-		res.statusCode = 404;
-		res.send("Not found!");
+		res.send(404, "Not found!");
 	}
 	res.send(customers[cust_id]);
 };
@@ -26,11 +25,17 @@ exports.delCustomer = function(req, res) {
 	var cust_id = req.params.id;
 	var customer = customers[cust_id];
 	if (customer == null) {
-		res.statusCode = 404;
-		res.send("Not found!");
+		res.send(404, "Not found!");
 	}
-	var stop = new Date().getTime();
-	while (new Date().getTime() < stop + 3000) {}
-	customers[cust_id] = null;
-	res.send("Deleted!");
+	res.send("Request sent!");
+	deleteCustomer(cust_id, function (index) {
+		var stop = new Date().getTime();
+		while (new Date().getTime() < stop + 3000) {}
+		customers[index] = null;
+		res.send("Deleted!");
+	})
+}
+
+function deleteCustomer(index, callback) {
+	callback(index);
 }
