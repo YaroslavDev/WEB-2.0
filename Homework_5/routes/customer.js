@@ -39,6 +39,7 @@ function computeStrongETag(customers) {
 
 var lastModified = new Date();
 var weakETag = computeWeakETag(customers);
+var strongETag = computeStrongETag(customers);
 
 exports.getCustomer = function(req, res){
 	var ETag = req.header('If-None-Match');
@@ -71,6 +72,7 @@ exports.putCustomer = function(req, res) {
 	customers[index].name = req.body.name;
 	lastModified = new Date();
 	weakETag = computeWeakETag(customers);
+	strongETag = computeStrongETag(customers);
 	console.log(customers);
 	res.send(200, "Updated");
 }
