@@ -1,7 +1,7 @@
 ### HW #3 - Resources, URIs, Operations
 ---
 Data model:  
-![Data model](Data_Model.png)  
+![Data model](https://raw.githubusercontent.com/YaroslavDev/WEB-2.0/master/Homework_3/Data_Model.png)  
 URIs:  
 
 *  __/owner__ - list of owners  
