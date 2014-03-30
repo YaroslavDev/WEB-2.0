@@ -2,7 +2,6 @@
 /**
  * Module dependencies.
  */
-
 var express = require('express')
   , routes = require('./routes')
   , customer = require('./routes/customer')
@@ -30,6 +29,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/customer/:id', customer.getCustomer);
 app.del('/customer/:id', customer.delCustomer);
+app.get('/monitor/:id', customer.getMonitor);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

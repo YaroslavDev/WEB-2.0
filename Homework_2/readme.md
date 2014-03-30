@@ -4,9 +4,10 @@
 #### 1. Server functionality
 
 In both implementations server can process 3 types of requests:
-	* open order (create new empty list)
-	* add item to order (add some string to list)
-	* process order (clear list)
+
+* open order (create new empty list)
+* add item to order (add some string to list)
+* process order (clear list)
 	
 All orders from all clients are store in global variable 'orders'. When clients requests to open new order, new index in 'orders' is allocated.
 	
