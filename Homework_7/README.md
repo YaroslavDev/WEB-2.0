@@ -3,7 +3,7 @@
 
 #### Description  
 
-Main functionality is stored in __routes/users.js__. It has single callback which dynamically computes and returns as response range of users according to specified query parameters _page_ and _size_. It sets also Link Headers which give information about next and last page for given page size.
+Main functionality is stored in __routes/users.js__. It has single callback which dynamically computes and returns as response range of users according to specified query parameters _page_ and _size_. It sets also Link Headers which give information about next and last page for given page size. Orders array is initialized as simple array with numbers from 0 to 99 in __app.js__.
 
 #### Usage example(with POSTMAN)
 __REQUEST>__: GET /orders?page=2&size=10  
