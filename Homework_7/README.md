@@ -5,6 +5,26 @@
 
 Main functionality is stored in __routes/users.js__. It has single callback which dynamically computes and returns as response range of users according to specified query parameters _page_ and _size_. It sets also Link Headers which give information about next and last page for given page size.
 
+#### Usage example(with POSTMAN)
+__REQUEST>__: GET /orders?page=2&size=10  
+__RESPONSE< STATUS 200 OK__  
+```javascript
+[
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+]
+```
+
+Link →<localhost:3000/orders?page=3&size=10>; rel="next",  
+ <localhost:3000/orders?page=10&size=10>; rel="last"
 
 ### Tools
 
