@@ -3,8 +3,8 @@
 
 #### Task 
 
-| Resource 						| Format | GET                  | DELETE  |  
-|								| 		|	                    |          |  
+| Resource 						| Format | GET                  | DELETE   |  
+|------------------------------|-------|-----------------------|----------|  
 | http://company.at/customers  | XML 	| OAuth2.0, ATOM        | OAuth2.0 |  
 | http://company.at/suppliers  | JSON	| OAuth2.0, JSONP       | OAuth2.0 |  
 | http://weather.at/innsbruck  | XML	| CORS, ATOM            | OAuth2.0, CORS |  
