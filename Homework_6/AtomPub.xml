@@ -5,7 +5,7 @@
 	<updated> 2014-04-25T10:00:00Z </updated>
 	<id> urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6 </id>
 	<author> 
-		<person> Peter Novak </person>
+		<person> Peter Novak </person> <!--author-->
 	</author>
 
 	<entry>
@@ -14,7 +14,7 @@
 		<id> urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a </id>
 		<updated> 2014-04-25T10:07:21Z </updated>
 		<format> JPG </format> <!--format of photo-->
-		<stars> 5 </stars>
+		<stars> 5 </stars> <!--rating of photo-->
 	</entry>
 
 </feed>
