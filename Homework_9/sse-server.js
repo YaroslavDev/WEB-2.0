@@ -2,8 +2,10 @@ var http = require('http');
 var sys = require('sys');
 var fs = require('fs');
 
+var streamFile = []
+
 http.createServer(function(req, res) {
-  //debugHeaders(req);
+  streamFile = fs.readFileSync('sin_day_real.data').toString().split('\n');
 
   if (req.headers.accept && req.headers.accept == 'text/event-stream') {
     if (req.url == '/events') {
@@ -19,7 +21,7 @@ http.createServer(function(req, res) {
   }
 }).listen(8000);
 
-function sendSSE(req, res) {
+function sendSSE(req, res, head) {
   res.writeHead(200, {
     'Content-Type': 'text/event-stream',
     'Cache-Control': 'no-cache',
@@ -27,24 +29,15 @@ function sendSSE(req, res) {
   });
 
   var id = (new Date()).toLocaleTimeString();
+  streamFileHead = 0;
 
-  // Sends a SSE every 5 seconds on a single connection.
+  // Sends a SSE every 2 seconds on a single connection.
   setInterval(function() {
-    constructSSE(res, id, (new Date()).toLocaleTimeString());
-  }, 5000);
+    if (streamFileHead < streamFile.length) {
+    	res.write('id: ' + id + '\n');
+  		res.write("data: " + streamFile[streamFileHead] + '\n\n');
+  		streamFileHead++;
+    }
+  }, 2000);
 
-  constructSSE(res, id, (new Date()).toLocaleTimeString());
-}
-
-function constructSSE(res, id, data) {
-  res.write('id: ' + id + '\n');
-  res.write("data: " + data + '\n\n');
-}
-
-function debugHeaders(req) {
-  sys.puts('URL: ' + req.url);
-  for (var key in req.headers) {
-    sys.puts(key + ': ' + req.headers[key]);
-  }
-  sys.puts('\n\n');
 }
