@@ -1,0 +1,11 @@
+Let the course have uri http://www.cvut.cz/course.xml
+Course has id 5445:
+	ex:course.xml ext:id “5445”
+Course has title “Web 2.0”:
+	ex:course.xml ext:title “Web 2.0”
+Course has creator “Tomas Vitvar” with email “tomas@vitvar.com“:
+	ex:course.xml ext:creator _:creator1
+	_:creator1 ext:name “Tomas Vitvar”
+	_:creator1 ext:email “tomas@vitvar.com“
+Course has 6 ECTS credits:
+	ex:course.xml ext:ects “6”^^xsd:decimal
