@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="71CE3006-993F-3459-10B9-E820C0D40417" name="Owner" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

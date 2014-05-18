@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+  <h1>Yahoo! Pipes</h1>
+  <script type="text/javascript">
+   	
+   	var URL = "http://pipes.yahoo.com/pipes/pipe.run?_id=525ea6dec3eaa6176f9766860785a086&_render=json&_callback=loadData";
+ 	insertData();
+	
+	function insertData() {
+    	var se = document.createElement('script');
+    	se.setAttribute("type","text/javascript");
+    	se.setAttribute("src", URL);    
+    	document.getElementsByTagName("head")[0].appendChild(se);   
+	}
+ 
+	// loads the data when they arrive 
+	function loadData(data) {
+		alert("loadData() is called!");
+		var h = document.createElement("H1");
+		var t = document.createTextNode(data.value.title);
+		h.appendChild(t);
+		document.body.appendChild(h);
+    	var ol = document.createElement("OL");
+    	for (var i = 0; i < data.value.items.length; i++) {
+    		var li = document.createElement("LI");
+    		li.innerHTML = data.value.items[i].title;
+    		li.className = data.value.items[i].title;
+    		ol.appendChild(li);
+    	}
+		document.body.appendChild(ol);
+	}
+    </script>
+</body>
+</html>

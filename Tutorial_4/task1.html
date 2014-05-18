@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $.getJSON("http://pipes.yahoo.com/pipes/pipe.run?_id=525ea6dec3eaa6176f9766860785a086&_render=json&_callback=?",
+        function(data) {
+          $.each(data.value, function(idx,item) {
+            var listitem = $("<li/>");
+            $("<a/>").attr("href", item.title).attr("class", item.source).text(item.title).appendTo(listitem);
+            $("
+").appendTo(listitem);
+            $("<span/>").attr("class", "source").text("from " + item.source).appendTo(listitem);
+            $("<span/>").text(", " + item.pubDate).appendTo(listitem);
+            listitem.appendTo("#activities");
+          });
+        });
+  });
+  </script>
+  <style>
+    .source { font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Yahoo! Pipes</h1>
+  <ul id="activities">
+  </ul>
+</body>
+</html>

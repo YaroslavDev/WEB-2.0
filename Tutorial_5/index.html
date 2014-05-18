@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodeMasters</title>
+            <meta property="og:title" content="CodeMasters"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="index.html"/>
+            <meta property="og:image" content="http://cdn2.ubergizmo.com/wp-content/uploads/2014/04/codemasters-logo-new.jpg"/>
+  </head>
+  <body>
+    <h2>Microformat</h2>
+    <div class="vcard">
+    	<a class="fn org url" href="http://www.codemasters.net/">CodeMasters</a>
+    	<div class="adr">
+    		<div class="street-address">51-53 Hagley Road</div>
+    		<span class="locality">England</span>
+    		<abbr class="region" title="Birmingham">Birmingham</abbr>&nbsp;&nbsp;
+    		<div class="country-name">UK</div>
+    	</div>
+    	<div class="tel">
+    		<span class="type">Work</span> 
+            <span class="value">+44 (0) 1926 814132</span>
+    	</div>
+    	<div class="email">
+    		<span class="email">custservice@codemasters.com</span>
+    	</div>
+    	<div class="geo">
+    		Birmingham:
+    		<span class="latitude">52.498344</span>
+    		<span class="longitude">-1.889037</span>
+    	</div>
+    </div>
+
+    <h3>Team Members:</h3>
+    <ul>
+        <li><a href="iaroslav.html">Iaroslav Ciupin</a></li>
+        <li><a href="mihai.html">Mihai Iachimovschi</a></li>
+        <li><a href="sergiu.html">Sergiu Terman</a></li>
+    </ul>
+
+    <h3>Projects:</h3>
+    <ul>
+        <li><a href="online_dict.html">Online Dictionary</a></li>
+    </ul>
+
+    <h3>Events:</h3>
+    <ul>
+        <li><a href="presentation.html">Online Dictionary Presentation</a></li>
+    </ul>
+
+    <h2>Microdata</h2>
+        <div itemscope itemtype="http://schema.org/Organization">
+          <div itemprop="name">CodeMasters</div>
+        Contact Details:
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            Main address:
+              <span itemprop="streetAddress">51-53 Hagley Road</span>
+              <span itemprop="addressLocality">Birmingham, England</span>
+          </div>
+            Tel:<span itemprop="telephone">+44 (0) 1926 814132</span>,
+            E-mail: <span itemprop="email">custservice@codemasters.com</span>
+        <br>Team Members:
+        <ul>
+            <li><a href="iaroslav.html" itemprop="member" itemscope itemtype="http://schema.org/Organization">Iaroslav Ciupin</a></li>
+            <li><a href="mihai.html" itemprop="member" itemscope itemtype="http://schema.org/Organization">Mihai Iachimovschi</a></li>
+            <li><a href="sergiu.html" itemprop="member" itemscope itemtype="http://schema.org/Organization">Sergiu Terman</a></li>
+        </ul>
+        </div> 
+    
+    <h2>RDFa</h2>
+        <div vocab="http://schema.org/" typeof="Organization">
+          <div property="name">CodeMasters</div>
+        Contact Details:
+          <div property="address"  typeof="PostalAddress">
+            Main address:
+              <span property="streetAddress">51-53 Hagley Road</span>
+              <span property="addressLocality">Birmingham, England</span>
+          </div>
+            Tel:<span property="telephone">+44 (0) 1926 814132 </span>,
+            E-mail: <span property="email">custservice@codemasters.com</span>
+        <br>Members:
+            <li><a href="iaroslav.html" property="member" typeof="Organization">Iaroslav Ciupin</a></li>
+            <li><a href="mihai.html" property="member" typeof="Organization">Mihai Iachimovschi</a></li>
+            <li><a href="sergiu.html" property="member" typeof="Organization">Sergiu Terman</a></li>
+          
+        History:
+        </div>
+ </body>
+</html>

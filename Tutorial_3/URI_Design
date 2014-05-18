@@ -1,0 +1,62 @@
+1. Resources and URIs
+	/country
+	{
+		countryName: "Czech Republic",
+		publishers: [
+			{
+				publisherName: "Staropramen"
+			},
+			{
+				publisherName: "Cerny Kozel"
+			}
+		]
+	}
+	/publisher
+	{
+		publisherName: "Staropramen",
+		country: "Czech Republic",
+		shops: [
+			{
+				shopName: "U tigra"
+			},
+			{
+				shopName: "U krokodila"
+			}
+		],
+		books: [
+			{
+				bookName: "War and Peace"
+			},
+			{
+				bookName: "Sherlock Holmes"
+			}
+		]
+	}
+	/shop
+	{
+		shopName: "U tigra",
+		publishers: [
+			{
+				publisherName: "Staropramen"
+			},
+			{
+				publisherName: "Cerny Kozel"
+			}
+		]
+	}
+	/book
+	{
+		bookName: "Sherlock Holmes",
+		author: "Arthur Conan Doyle"
+	}
+	/author
+	{
+		authorName: "Arthur Conan Doyle",
+		books: [
+			{
+				bookName: "Sherlock Holmes"
+			}
+		]
+	}
+	HTTP method: GET
+	Status codes: 200 - ok, 400 - bad request

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Car-Plate_Relation" id="36794CFE-A76B-AD5B-C5CE-F7F24FC3284A" directorySegmentName="seg_0">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:17:43 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>1</nameOnSource>
+<nameOnTarget>0..1</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>96EE5E67-B133-9F04-E770-FD9881C88047</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3D360A48-7B39-8E67-1EDA-B93D1126C591</targetEntity>
+<transferable>true</transferable>
+</Relation>

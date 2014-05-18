@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom"
+    xmlns:rating="http://www.example.org/Rating">
 
 	<title>Trip to Prague</title>
 	<updated> 2014-04-25T10:00:00Z </updated>
@@ -10,11 +11,10 @@
 
 	<entry>
 		<title> Prague Castle </title> <!-- name of photo -->
-		<link href="http://store.it/users/432/albums/635/photos/prague-castle.jpg"/>
+		<link type="image/jpg" href="http://store.it/users/432/albums/635/photos/prague-castle.jpg"/>
 		<id> urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a </id>
 		<updated> 2014-04-25T10:07:21Z </updated>
-		<format> JPG </format> <!--format of photo-->
-		<stars> 5 </stars> <!--rating of photo-->
+		<rating:stars> 5 </rating:stars> <!--rating of photo-->
 	</entry>
 
 </feed>

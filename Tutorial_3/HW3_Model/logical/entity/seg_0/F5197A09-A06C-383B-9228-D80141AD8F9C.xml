@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="F5197A09-A06C-383B-9228-D80141AD8F9C" directorySegmentName="seg_0" name="Owner">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:13:18 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<pkName>Owner PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="owner_id" id="B22547C5-5798-0C39-D829-2952C1CCEF24">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:13:27 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="owner_name" id="44D1F38E-F72D-8641-26B2-FACCFE66C68C">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:13:43 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="place_id" id="CB797DB6-F2A5-6510-3999-50D7F648F9BE">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:19:18 UTC</createdTime>
+<generatorID>26DCC1A7-4E98-68B4-0D7F-CA316C8E77A0</generatorID>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<referedAttribute>96B1E213-956B-1B89-735B-47C4F984411E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="F1B9C8DE-60B0-1F18-5578-597E74FD41AE" name="Owner PK">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:13:40 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B22547C5-5798-0C39-D829-2952C1CCEF24</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

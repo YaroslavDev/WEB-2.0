@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="96EE5E67-B133-9F04-E770-FD9881C88047" directorySegmentName="seg_0" name="Car">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:16:00 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<pkName>Car PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="car_id" id="5FD057A0-A5A1-64F2-1FDA-3565D1EDEC80">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:16:12 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="car_model" id="74263EF9-F4B7-0AE9-FD0E-4100D722CA93">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:16:30 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="plate_number" id="8A572B0D-EDAB-BB95-DCF1-072B5DBAB19B">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:17:43 UTC</createdTime>
+<generatorID>36794CFE-A76B-AD5B-C5CE-F7F24FC3284A</generatorID>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<referedAttribute>C93D3103-5E85-A00C-A96E-BD1C897B521B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="owner_id" id="5AFA54B6-EE23-0DB5-2243-E8972D4FBD11">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:18:40 UTC</createdTime>
+<generatorID>D58AA96A-2104-B1B9-0275-1E47C9DB9B27</generatorID>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<referedAttribute>B22547C5-5798-0C39-D829-2952C1CCEF24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="2F0D5222-56F8-E911-9F41-9EFAE1EE46F4" name="Car PK">
+<createdBy>ciupin-iaroslav</createdBy>
+<createdTime>2014-03-30 08:16:29 UTC</createdTime>
+<ownerDesignName>HW3_Model</ownerDesignName>
+<engineerTo>
+<item key="3C5EE7B5-5C4E-F3E8-588E-5FC507C8836B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5FD057A0-A5A1-64F2-1FDA-3565D1EDEC80</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
